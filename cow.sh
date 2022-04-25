@@ -12,8 +12,8 @@ sudo systemctl start docker
 cd /opt/
 git clone https://github.com/mailcow/mailcow-dockerized
 cd mailcow-dockerized
+curl -o docker-compose.yml https://raw.githubusercontent.com/redcodesick/cow/main/docker-compose.yml
 ./generate_config.sh
-
 ###########################################----------------------------------------------------------------
 
 sed -i 's/do-ip6: yes/do-ip6: no/g' data/conf/unbound/unbound.conf
