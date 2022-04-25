@@ -83,6 +83,7 @@ cat > data/conf/nginx/site.portainer.custom <<EOL
     proxy_set_header Connection $connection_upgrade;
     proxy_pass http://portainer/api/websocket/;
   }
+
 EOL
 
 cat > data/conf/postfix/extra.cf <<EOL
